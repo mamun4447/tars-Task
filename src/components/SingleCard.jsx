@@ -1,20 +1,18 @@
 import React from "react";
 import { FaExpand, FaThumbsUp } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const SingleCard = ({ photo, setSingleInfo }) => {
-  const { id, likes, user, urls, alt_description } = photo;
-  const { name, username, total_photos, updated_at, location, profile_image } =
-    user;
+  const { likes, user, urls, alt_description } = photo;
+  const { name, username, profile_image } = user;
   // console.log(photo);
 
   return (
-    <div className="card w-full bg-base-100 shadow-xl image-full">
+    <div className="card w-full  shadow-xl image-full">
       <figure>
         <img className="w-full max-h-60" src={urls.thumb} alt="Shoes" />
       </figure>
 
-      <div className="card-body">
+      <div className="card-body ">
         <p>{alt_description}</p>
         <label
           onClick={() => setSingleInfo(photo)}
