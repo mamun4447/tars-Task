@@ -5,7 +5,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { HiDownload } from "react-icons/hi";
 
 const Modal = ({ singleInfo }) => {
-  const { id, likes, user, urls, alt_description } = singleInfo;
+  const {  likes, user, urls } = singleInfo;
   const tags = [
     "Animals in the wild",
     "Animals images & Pictures",

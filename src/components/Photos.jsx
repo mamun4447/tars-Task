@@ -13,8 +13,8 @@ const Photos = ({ photos, setPhotos, search }) => {
       .then((res) => res.json())
       .then((data) => {
         if (search) {
-          data = data.filter(
-            (singleData) => search === singleData.alt_description.slice(2, 7)
+          data = data.filter((singleData) =>
+            singleData.alt_description.slice(2, -1).includes(search)
           );
           setPhotos(data);
         } else {

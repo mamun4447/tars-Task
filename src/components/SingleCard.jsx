@@ -1,10 +1,10 @@
 import React from "react";
 import { FaExpand, FaThumbsUp } from "react-icons/fa";
-import { Link } from "react-router-dom";
+
 
 const SingleCard = ({ photo, setSingleInfo }) => {
-  const { id, likes, user, urls, alt_description } = photo;
-  const { name, username, total_photos, updated_at, location, profile_image } =
+  const { likes, user, urls, alt_description } = photo;
+  const { name, username,  profile_image } =
     user;
   // console.log(photo);
 

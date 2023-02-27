@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import Header from "./Header";
 import NavBar from "./NavBar";
 import Photos from "./Photos";
