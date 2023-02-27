@@ -26,7 +26,6 @@ const Photos = ({ photos, setPhotos, search }) => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mx-auto mx-4  py-5 gap-5 justify-center items-center dark:bg-zinc-800 px-20">
       {photos.map((photo) => (
         <SingleCard
-          search={search}
           key={photo.id}
           setSingleInfo={setSingleInfo}
           photo={photo}
