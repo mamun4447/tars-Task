@@ -8,7 +8,7 @@ const NavBar = ({ setSearch }) => {
     e.preventDefault();
 
     const text = e.target.value;
-    console.log(e.target.value);
+    // console.log(e.target.value);
     setSearch(text.toLowerCase());
   };
 

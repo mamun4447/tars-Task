@@ -1,10 +1,10 @@
 import React from "react";
 import { BsSearch } from "react-icons/bs";
 
-const Header = () => {
+const Header = ({ search }) => {
   return (
     <div>
-      <header className="bg-white dark:bg-zinc-800">
+      <header className="bg-white dark:bg-zinc-800 ">
         <div className="w-full bg-center bg-cover h-[38rem] ">
           <img
             className="absolute w-full h-[92vh] dark:bg-zinc-800"

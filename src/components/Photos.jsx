@@ -14,7 +14,7 @@ const Photos = ({ photos, setPhotos, search }) => {
       .then((data) => {
         if (search) {
           data = data.filter((singleData) =>
-            singleData.alt_description.slice(2, -1).includes(search)
+            singleData.alt_description.toLowerCase().includes(search)
           );
           setPhotos(data);
         } else {
